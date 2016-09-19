@@ -4,8 +4,8 @@ These files are the configuration I use to personalise my computer and my
 development environment.
 
 I follow the conventions laid out by
-[Substrate](//github.com/goodgravy/substrate) which means that running the
-[`substrate`](/substrate/script/substrate) script links files into the right
+[Full Stop](//github.com/goodgravy/full-stop) which means that running the
+[`full-stop`](/full-stop/script/full-stop) script links files into the right
 places, sets up my path, and runs the `setup.sh` scripts.
 
 A good amount of this configuration was inspired by or taken directly from
@@ -18,5 +18,5 @@ git clone git@github.com:goodgravy/dotfiles.git $HOME/.dotfiles
 cd $HOME/.dotfiles
 git submodule init
 git submodule update --rebase
-./substrate/script/substrate
+./full-stop/script/full-stop
 ```

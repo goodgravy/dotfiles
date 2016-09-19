@@ -1,0 +1,3 @@
+#!/bin/bash
+
+${HOME}/.dotfiles/full-stop/script/full-stop
