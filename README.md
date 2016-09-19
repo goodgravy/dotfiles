@@ -16,5 +16,7 @@ A good amount of this configuration was inspired by or taken directly from
 ```sh
 git clone git@github.com:goodgravy/dotfiles.git $HOME/.dotfiles
 cd $HOME/.dotfiles
-./substrate/bin/substrate
+git submodule init
+git submodule update --rebase
+./substrate/script/substrate
 ```
