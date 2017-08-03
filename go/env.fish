@@ -1,2 +1,4 @@
 set -x GOPATH $HOME/Code/go
-set -x PATH   $PATH $GOPATH/bin
+if test -d $GOPATH
+  set -x PATH $PATH $GOPATH/bin
+end
