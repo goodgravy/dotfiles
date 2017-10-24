@@ -9,6 +9,8 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'eventualbuddha/vim-protobuf'
 Plug 'fatih/vim-go'
 Plug 'garbas/vim-snipmate'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'majutsushi/tagbar'
 Plug 'nathanaelkane/vim-indent-guides'
