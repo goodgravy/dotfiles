@@ -13,6 +13,7 @@ brew 'rbenv'
 brew 'tree'
 brew 'tmux'
 brew 'neovim'
+brew 'elixir'
 
 cask '1password'
 cask 'dropbox'
