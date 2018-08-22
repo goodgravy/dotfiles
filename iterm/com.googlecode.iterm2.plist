@@ -491,6 +491,8 @@
 	<integer>0</integer>
 	<key>HotkeyCode</key>
 	<integer>0</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>0</integer>
 	<key>IRMemory</key>
@@ -565,15 +567,15 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>1528 289 924 485 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
-	<string>650 769 616 174 0 0 1920 1200 </string>
+	<string>652 753 616 174 0 0 1920 1178 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1920 1200 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>168 688 796 473 0 0 1920 1200 </string>
+	<string>168 666 918 495 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1 655 865 517 0 0 1920 1178 </string>
+	<string>1 655 850 517 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 360 865 517 0 0 2560 1417 </string>
+	<string>0 273 865 517 0 0 1920 1200 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2803,6 +2805,10 @@
 	<string>75119FD3-5490-4BAF-90AB-92AEC83ADE35</string>
 	<key>NoSyncLastTipTime</key>
 	<real>480336866.003304</real>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -2893,10 +2899,12 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-06-30T13:50:15Z</date>
+	<date>2017-12-13T16:16:57Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
@@ -2941,7 +2949,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.15</string>
+	<string>3.1.beta.10</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
