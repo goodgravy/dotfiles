@@ -15,7 +15,6 @@ brew 'tmux'
 brew 'neovim'
 brew 'elixir'
 
-cask '1password'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'java' unless system '/usr/libexec/java_home --failfast'
