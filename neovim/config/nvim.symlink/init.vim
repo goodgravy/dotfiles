@@ -112,6 +112,17 @@ silent! autocmd VimEnter * RemoveConflictingAlignMaps
 " Set ctags file location
 set tags+=.tags
 
+" Autosave only when there is something to save. Always saving makes build
+" watchers crazy
+function! SaveIfUnsaved()
+    if &modified
+        :silent! w
+    endif
+endfunction
+au FocusLost,BufLeave * :call SaveIfUnsaved()
+" Read the file on focus/buffer enter
+au FocusGained,BufEnter * :silent! !
+
 source ~/.config/nvim/airline.vim
 source ~/.config/nvim/neomake.vim
 source ~/.config/nvim/rails.vim
