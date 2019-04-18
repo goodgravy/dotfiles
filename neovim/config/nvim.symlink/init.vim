@@ -128,3 +128,4 @@ source ~/.config/nvim/neomake.vim
 source ~/.config/nvim/rails.vim
 source ~/.config/nvim/go.vim
 source ~/.config/nvim/fzf.vim
+source ~/.config/nvim/javascript.vim
