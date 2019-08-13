@@ -1,4 +1,7 @@
 function fish_prompt --description 'Write out the prompt'
+	if not set -q __fish_prompt_hostname
+		set -g __fish_prompt_hostname (hostname)
+	end
 	if not set -q __fish_git_prompt_show_informative_status
 		set -g __fish_git_prompt_show_informative_status 1
 	end
@@ -74,6 +77,11 @@ function fish_prompt --description 'Write out the prompt'
 		set color_cwd $fish_color_cwd
 		set suffix '$'
 	end
+
+	# Hostname
+	set_color blue
+	echo -n "[$__fish_prompt_hostname] "
+	set_color normal
 
 	# PWD
 	set_color $color_cwd
