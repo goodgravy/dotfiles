@@ -1,3 +1,1 @@
-function vim
-  /usr/local/bin/nvim $argv
-end
+alias vim='nvim'
