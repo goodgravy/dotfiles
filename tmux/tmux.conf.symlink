@@ -51,8 +51,8 @@ bind-key ] paste-buffer
 # Status Bar
 set-option -g status-interval 1
 set-option -g status-left ''
-set-option -g status-right '%l:%M%p'
-set-window-option -g window-status-current-style fg=magenta
+set-option -g status-right '#H'
+set-window-option -g window-status-current-style fg=white
 set-option -g status-fg default
 
 # Status Bar solarized-dark (default)
