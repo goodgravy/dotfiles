@@ -48,14 +48,6 @@ bind-key c new-window
 bind-key [ copy-mode
 bind-key ] paste-buffer
 
-# Setup 'v' to begin selection as in Vim
-bind-key -Tcopy-mode-vi v send-keys -X begin-selection
-bind-key -Tcopy-mode-vi y send-keys -X copy-pipe "reattach-to-user-namespace pbcopy"
-
-# Update default binding of `Enter` to also use copy-pipe
-unbind -Tcopy-mode-vi Enter
-bind-key -Tcopy-mode-vi Enter send-keys -X copy-pipe "reattach-to-user-namespace pbcopy"
-
 # Status Bar
 set-option -g status-interval 1
 set-option -g status-left ''
@@ -77,8 +69,8 @@ if-shell "[ \"$COLORFGBG\" = \"11;15\" ]" "set-option -g pane-border-fg white"
 setw -g monitor-activity on
 set -g visual-activity on
 
-# Enable native Mac OS X copy/paste
-set-option -g default-command "/bin/bash -c 'which reattach-to-user-namespace >/dev/null && exec reattach-to-user-namespace $SHELL -l || exec $SHELL -l'"
-
 # Allow the arrow key to be used immediately after changing windows
 set-option -g repeat-time 0
+
+# Maybe load MacOS-specific config
+if-shell '[ (uname) -eq "Darwin" ]' \   'source-file .tmux.macos.conf'
