@@ -4,9 +4,6 @@ unbind-key C-a
 bind-key C-a send-prefix
 set -g base-index 1
 
-# Easy config reload
-bind-key R source-file ~/.tmux.conf \; display-message "tmux.conf reloaded."
-
 # vi is good
 setw -g mode-keys vi
 
@@ -46,11 +43,7 @@ bind-key = select-layout main-vertical
 set-window-option -g other-pane-height 25
 set-window-option -g other-pane-width 80
 
-bind-key a last-pane
-bind-key q display-panes
 bind-key c new-window
-bind-key t next-window
-bind-key T previous-window
 
 bind-key [ copy-mode
 bind-key ] paste-buffer
@@ -62,8 +55,6 @@ bind-key -Tcopy-mode-vi y send-keys -X copy-pipe "reattach-to-user-namespace pbc
 # Update default binding of `Enter` to also use copy-pipe
 unbind -Tcopy-mode-vi Enter
 bind-key -Tcopy-mode-vi Enter send-keys -X copy-pipe "reattach-to-user-namespace pbcopy"
-
-set-window-option -g display-panes-time 1500
 
 # Status Bar
 set-option -g status-interval 1
