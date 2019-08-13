@@ -1,5 +1,4 @@
 cask_args appdir: '/Applications'
-tap 'heroku/brew'
 
 brew 'ag'
 brew 'awscli'
@@ -8,7 +7,6 @@ brew 'direnv'
 brew 'fish'
 brew 'fzf'
 brew 'grc'
-brew 'heroku'
 brew 'htop'
 brew 'hugo'
 brew 'pstree'
