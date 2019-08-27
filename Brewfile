@@ -1,5 +1,4 @@
 cask_args appdir: '/Applications'
-tap 'Schniz/tap'
 
 brew 'ag'
 brew 'awscli'
@@ -13,7 +12,6 @@ brew 'hugo'
 brew 'pgcli'
 brew 'pstree'
 brew 'rbenv'
-brew 'fnm'
 brew 'starship'
 brew 'tree'
 brew 'tmux'
