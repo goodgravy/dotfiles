@@ -5,7 +5,6 @@ Plug 'austintaylor/vim-indentobject'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'dag/vim-fish'
 Plug 'elixir-lang/vim-elixir'
-Plug 'eventualbuddha/vim-protobuf'
 Plug 'fatih/vim-go'
 Plug 'garbas/vim-snipmate'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
