@@ -22,3 +22,4 @@ set background=light
 set tags+=.tags
 
 source ~/.config/nvim/plug.vim
+source ~/.config/nvim/grep.vim
