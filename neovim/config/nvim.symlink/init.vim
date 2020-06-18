@@ -23,3 +23,5 @@ set tags+=.tags
 
 source ~/.config/nvim/plug.vim
 source ~/.config/nvim/grep.vim
+source ~/.config/nvim/find_files.vim
+source ~/.config/nvim/file_tree.vim
