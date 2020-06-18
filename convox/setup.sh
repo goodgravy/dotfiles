@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 if [ $(uname) = 'Darwin' ]; then
   binary=$(which convox-macos)
