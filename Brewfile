@@ -1,6 +1,6 @@
 cask_args appdir: '/Applications'
 
-brew 'ag'
+brew 'ripgrep'
 brew 'awscli'
 brew 'coreutils'
 brew 'direnv'
