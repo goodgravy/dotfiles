@@ -27,6 +27,11 @@ bind-key bspace previous-window
 bind-key enter next-layout
 bind-key C-o rotate-window
 
+# Leader= sets a good default layout
+bind-key = select-layout main-vertical
+set-window-option -g other-pane-height 25
+set-window-option -g other-pane-width 80
+
 # use vim-like keys for splits
 bind-key v split-window -h -c "#{pane_current_path}"
 bind-key s split-window -v -c "#{pane_current_path}"
