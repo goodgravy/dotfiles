@@ -433,6 +433,31 @@
             }
           }
         }
+      },
+      "mysql-client": {
+        "version": "8.0.19",
+        "bottle": {
+          "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
+          "prefix": "/home/linuxbrew/.linuxbrew",
+          "files": {
+            "catalina": {
+              "url": "https://linuxbrew.bintray.com/bottles/mysql-client-8.0.19.catalina.bottle.tar.gz",
+              "sha256": "43a72c20ae7b146f6dc7d01b9f63bef605972c26ecf2970de841f4ecd02c4b9e"
+            },
+            "mojave": {
+              "url": "https://linuxbrew.bintray.com/bottles/mysql-client-8.0.19.mojave.bottle.tar.gz",
+              "sha256": "c8d2434da809237c64cd3dd4139a2bd148b6773fca040c001cc7af468354e761"
+            },
+            "high_sierra": {
+              "url": "https://linuxbrew.bintray.com/bottles/mysql-client-8.0.19.high_sierra.bottle.tar.gz",
+              "sha256": "cb1fdc14848bdeaf8c3e4ebb1550cabd794771e7f7918be1716e08b43e8889b9"
+            },
+            "x86_64_linux": {
+              "url": "https://linuxbrew.bintray.com/bottles/mysql-client-8.0.19.x86_64_linux.bottle.tar.gz",
+              "sha256": "23148eb60b2b1bc5cfdc834c42282b9dc5b913d1c8d1d419c49d2701350a3ac8"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -491,7 +516,7 @@
       "Ubuntu 18.04.4 LTS (bionic)": {
         "HOMEBREW_VERSION": "2.4.0",
         "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
-        "Homebrew/linuxbrew-core": "e74807b19e3bf91f3e2f68945c8517e4af8580b7",
+        "Homebrew/linuxbrew-core": "5060c657c5e953101feb8569d51b9eefe448be2c",
         "GCC": "5.5.0"
       }
     }
