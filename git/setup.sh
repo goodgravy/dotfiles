@@ -27,4 +27,3 @@ then
 
   echo "created $script_dir/gitconfig.local.symlink"
 fi
-
