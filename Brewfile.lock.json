@@ -458,6 +458,31 @@
             }
           }
         }
+      },
+      "node": {
+        "version": "14.4.0",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/home/linuxbrew/.linuxbrew",
+          "files": {
+            "catalina": {
+              "url": "https://linuxbrew.bintray.com/bottles/node-14.4.0.catalina.bottle.tar.gz",
+              "sha256": "7fbf484b2c921451809192dba684a838ba387a4affc1d4380ebb607f95ccf0ec"
+            },
+            "mojave": {
+              "url": "https://linuxbrew.bintray.com/bottles/node-14.4.0.mojave.bottle.tar.gz",
+              "sha256": "06ef204701e93bbcf3909dba4ac9d3ca1d4df00a980f03cbeab390be1c562d34"
+            },
+            "high_sierra": {
+              "url": "https://linuxbrew.bintray.com/bottles/node-14.4.0.high_sierra.bottle.tar.gz",
+              "sha256": "68c7e5ff3e93bda3795d954b83609282f9ccf3cbe8096affeb28179d1fc1bd1d"
+            },
+            "x86_64_linux": {
+              "url": "https://linuxbrew.bintray.com/bottles/node-14.4.0.x86_64_linux.bottle.tar.gz",
+              "sha256": "59c0b25415730182ef94a0dca61a9a0c6a2fd4792ab14cfaa74a0a0e1970b415"
+            }
+          }
+        }
       }
     },
     "cask": {
