@@ -3,26 +3,26 @@
     "brew": {
       "ag": null,
       "awscli": {
-        "version": "2.0.23",
+        "version": "2.0.25",
         "bottle": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "prefix": "/home/linuxbrew/.linuxbrew",
           "files": {
             "catalina": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.23.catalina.bottle.tar.gz",
-              "sha256": "4ccd883386ceed5eab14ab86f5bba121a24ee346b381b9471d63b35ebe89f70a"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.25.catalina.bottle.tar.gz",
+              "sha256": "663ffc0197f4edbbe5f351f67d071a7ca4848be8a01fea5f99dd9d14558f3a7c"
             },
             "mojave": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.23.mojave.bottle.tar.gz",
-              "sha256": "562514476c72adc0c8136f74ec0ffdca5792a586689de15b40bf199d2b6195fe"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.25.mojave.bottle.tar.gz",
+              "sha256": "d65c65c39cbe4a8ac20c175cc5b8cc8180dcc3fe96e55069b7fc8d890129f368"
             },
             "high_sierra": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.23.high_sierra.bottle.tar.gz",
-              "sha256": "a8982eb143136312e447741298be726c02b2eaa576322e0c683dca6e4bcfa0bb"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.25.high_sierra.bottle.tar.gz",
+              "sha256": "b8640bf289cd48d59fea766ede54ca64dfc526c276f12250a8beeaa7db18fcfb"
             },
             "x86_64_linux": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.23.x86_64_linux.bottle.tar.gz",
-              "sha256": "f343a06b19fda0e8314e232f22bd7b41ca03f1baa52550e811646391b738b6e6"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.25.x86_64_linux.bottle.tar.gz",
+              "sha256": "a997ac7d40ef15ed433ccf981b750065a899359c1d87fa8577f7aa55d30fc68d"
             }
           }
         }
@@ -483,6 +483,60 @@
             }
           }
         }
+      },
+      "languagetool": {
+        "version": "4.9.1",
+        "bottle": false
+      },
+      "docker-compose": {
+        "version": "1.26.0",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/home/linuxbrew/.linuxbrew",
+          "files": {
+            "catalina": {
+              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.0.catalina.bottle.tar.gz",
+              "sha256": "cd12694e2bcdc21219c7ec2f0cccf6130a70ec8cc0ab5e70d52945a862266b2f"
+            },
+            "mojave": {
+              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.0.mojave.bottle.tar.gz",
+              "sha256": "c653c2767b67475a87b6f52d275dbcdb1de0bf2d56989c6555781a090a1fe81f"
+            },
+            "high_sierra": {
+              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.0.high_sierra.bottle.tar.gz",
+              "sha256": "0357d87553355e3df806a15292b06693c973a1f0457b536f175c5ee5405db6ed"
+            },
+            "x86_64_linux": {
+              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.0.x86_64_linux.bottle.tar.gz",
+              "sha256": "eeed6d53ec4dac936986af5a603cb67d25d19654dc5ee1829d69306289ffef8e"
+            }
+          }
+        }
+      },
+      "docker": {
+        "version": "19.03.11",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/home/linuxbrew/.linuxbrew",
+          "files": {
+            "catalina": {
+              "url": "https://linuxbrew.bintray.com/bottles/docker-19.03.11.catalina.bottle.tar.gz",
+              "sha256": "96919e8787467dd2caf29387b076b4a4f830a9037a8563445b858422f6a5adb3"
+            },
+            "mojave": {
+              "url": "https://linuxbrew.bintray.com/bottles/docker-19.03.11.mojave.bottle.tar.gz",
+              "sha256": "586c5f6c50a29b181c55cf559267dabfbda7a1ee328c4a0d24e292b4b8f063f3"
+            },
+            "high_sierra": {
+              "url": "https://linuxbrew.bintray.com/bottles/docker-19.03.11.high_sierra.bottle.tar.gz",
+              "sha256": "8b858c895829b944ba4d6da0d99b917509989ba92de89bd45d894d3b7d95f047"
+            },
+            "x86_64_linux": {
+              "url": "https://linuxbrew.bintray.com/bottles/docker-19.03.11.x86_64_linux.bottle.tar.gz",
+              "sha256": "84d76feb32b62f839a0f4bae566e28f61f58d77e44cbf24e18f4162fbf182cc1"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -539,9 +593,9 @@
         "GCC": "5.5.0"
       },
       "Ubuntu 18.04.4 LTS (bionic)": {
-        "HOMEBREW_VERSION": "2.4.0",
+        "HOMEBREW_VERSION": "2.4.2",
         "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
-        "Homebrew/linuxbrew-core": "5060c657c5e953101feb8569d51b9eefe448be2c",
+        "Homebrew/linuxbrew-core": "9099cd2605d42ec7e65621d7c487e54a188dad0a",
         "GCC": "5.5.0"
       }
     }
