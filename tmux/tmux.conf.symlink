@@ -2,13 +2,17 @@ set-option -g prefix C-a
 unbind-key C-b
 bind-key a send-prefix
 
+# Start windows and panes at 1, not 0
+set -g base-index 1
+setw -g pane-base-index 1
+
 set-option -wg automatic-rename off
 
 # Setup vi-style copy/paste
-set-window-option -g mode-keys vi 
-bind P paste-buffer 
-bind-key -T copy-mode-vi v send-keys -X begin-selection 
-bind-key -T copy-mode-vi y send-keys -X copy-selection 
+set-window-option -g mode-keys vi
+bind P paste-buffer
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-selection
 bind-key -T copy-mode-vi r send-keys -X rectangle-toggle
 
 # Improve colors
