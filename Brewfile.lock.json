@@ -3,26 +3,26 @@
     "brew": {
       "ag": null,
       "awscli": {
-        "version": "2.0.25",
+        "version": "2.0.28",
         "bottle": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "prefix": "/home/linuxbrew/.linuxbrew",
           "files": {
             "catalina": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.25.catalina.bottle.tar.gz",
-              "sha256": "663ffc0197f4edbbe5f351f67d071a7ca4848be8a01fea5f99dd9d14558f3a7c"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.28.catalina.bottle.tar.gz",
+              "sha256": "3b83be95ba5113c2d3ed994f31e17e35baef9517f8686f86a8ae911aed582995"
             },
             "mojave": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.25.mojave.bottle.tar.gz",
-              "sha256": "d65c65c39cbe4a8ac20c175cc5b8cc8180dcc3fe96e55069b7fc8d890129f368"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.28.mojave.bottle.tar.gz",
+              "sha256": "2a748f2c03b3c957e77c86fd2b089a4028bf9e8be685a7a395049d8a36b14625"
             },
             "high_sierra": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.25.high_sierra.bottle.tar.gz",
-              "sha256": "b8640bf289cd48d59fea766ede54ca64dfc526c276f12250a8beeaa7db18fcfb"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.28.high_sierra.bottle.tar.gz",
+              "sha256": "6c0515dfcf2b640aa6b3b7144d728392affec9656c63502b9cbdc84074700285"
             },
             "x86_64_linux": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.25.x86_64_linux.bottle.tar.gz",
-              "sha256": "a997ac7d40ef15ed433ccf981b750065a899359c1d87fa8577f7aa55d30fc68d"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.28.x86_64_linux.bottle.tar.gz",
+              "sha256": "2b8439877cb0ccc856b923832059e842018b85ae07e52ac5fd21d5d447859455"
             }
           }
         }
@@ -366,20 +366,20 @@
           "prefix": "/home/linuxbrew/.linuxbrew",
           "files": {
             "catalina": {
-              "url": "https://linuxbrew.bintray.com/bottles/tmux-3.1b.catalina.bottle.tar.gz",
-              "sha256": "f26bd0c3f5696350dcaf229d0fadaf6ab677c0ebbb550fc499ca0a37da59ab55"
+              "url": "https://linuxbrew.bintray.com/bottles/tmux-3.1b.catalina.bottle.1.tar.gz",
+              "sha256": "785c1b2e2518478621eb5ac894b3f0ed06d8fdc4d223dd476451ab26974e3803"
             },
             "mojave": {
-              "url": "https://linuxbrew.bintray.com/bottles/tmux-3.1b.mojave.bottle.tar.gz",
-              "sha256": "e9995ca765078be9cfdef4f1b6a628bcded0e96e36649e084a7f5480d165547a"
+              "url": "https://linuxbrew.bintray.com/bottles/tmux-3.1b.mojave.bottle.1.tar.gz",
+              "sha256": "a8fb2df02c2e094404b6c56e2b9d15a35abd012913771ad311e08cc3572f0e4b"
             },
             "high_sierra": {
-              "url": "https://linuxbrew.bintray.com/bottles/tmux-3.1b.high_sierra.bottle.tar.gz",
-              "sha256": "7a04ece8143c0647be18bb14c160a984a5a9f855fa2ee888d21fc19374790ee5"
+              "url": "https://linuxbrew.bintray.com/bottles/tmux-3.1b.high_sierra.bottle.1.tar.gz",
+              "sha256": "5d43e03fc71740ec38c98b309adb2b6d198a20fcb14f76bc163232fda61fac23"
             },
             "x86_64_linux": {
-              "url": "https://linuxbrew.bintray.com/bottles/tmux-3.1b.x86_64_linux.bottle.tar.gz",
-              "sha256": "661641854a9bc8b9c45e868901f7ec0a480ceecbf430d4f212082256e85c27ce"
+              "url": "https://linuxbrew.bintray.com/bottles/tmux-3.1b.x86_64_linux.bottle.1.tar.gz",
+              "sha256": "220223f0a48574966d99fbd4e39665ffd7304da72e4a4c4a32f4f7d096ca0aa7"
             }
           }
         }
@@ -460,55 +460,51 @@
         }
       },
       "node": {
-        "version": "14.4.0",
+        "version": "14.5.0",
         "bottle": {
           "cellar": ":any",
           "prefix": "/home/linuxbrew/.linuxbrew",
           "files": {
             "catalina": {
-              "url": "https://linuxbrew.bintray.com/bottles/node-14.4.0.catalina.bottle.tar.gz",
-              "sha256": "7fbf484b2c921451809192dba684a838ba387a4affc1d4380ebb607f95ccf0ec"
+              "url": "https://linuxbrew.bintray.com/bottles/node-14.5.0.catalina.bottle.tar.gz",
+              "sha256": "91096144949902e76d46a3c0cfa26f5f55665da838f77ac96c58c416940d28d0"
             },
             "mojave": {
-              "url": "https://linuxbrew.bintray.com/bottles/node-14.4.0.mojave.bottle.tar.gz",
-              "sha256": "06ef204701e93bbcf3909dba4ac9d3ca1d4df00a980f03cbeab390be1c562d34"
+              "url": "https://linuxbrew.bintray.com/bottles/node-14.5.0.mojave.bottle.tar.gz",
+              "sha256": "3f29cb2043ac857f2339ed390d54ea6124ff7be1c6fbb5a2a40a43261775247e"
             },
             "high_sierra": {
-              "url": "https://linuxbrew.bintray.com/bottles/node-14.4.0.high_sierra.bottle.tar.gz",
-              "sha256": "68c7e5ff3e93bda3795d954b83609282f9ccf3cbe8096affeb28179d1fc1bd1d"
+              "url": "https://linuxbrew.bintray.com/bottles/node-14.5.0.high_sierra.bottle.tar.gz",
+              "sha256": "6d4ea6d0ed5ea232ca3614f187c106a813c07eee44f68fba884fcf4edc8b01b6"
             },
             "x86_64_linux": {
-              "url": "https://linuxbrew.bintray.com/bottles/node-14.4.0.x86_64_linux.bottle.tar.gz",
-              "sha256": "59c0b25415730182ef94a0dca61a9a0c6a2fd4792ab14cfaa74a0a0e1970b415"
+              "url": "https://linuxbrew.bintray.com/bottles/node-14.5.0.x86_64_linux.bottle.tar.gz",
+              "sha256": "8aeec5626cc6697f3a28da23de3ba39fb7eeee9b431ac8eaffd16c01aae8b57e"
             }
           }
         }
       },
       "languagetool": {
-        "version": "4.9.1",
+        "version": "5.0",
         "bottle": false
       },
       "docker-compose": {
-        "version": "1.26.0",
+        "version": "1.26.2",
         "bottle": {
           "cellar": ":any",
           "prefix": "/home/linuxbrew/.linuxbrew",
           "files": {
             "catalina": {
-              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.0.catalina.bottle.tar.gz",
-              "sha256": "cd12694e2bcdc21219c7ec2f0cccf6130a70ec8cc0ab5e70d52945a862266b2f"
+              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.2.catalina.bottle.1.tar.gz",
+              "sha256": "bc1ad5db046542ffd71a82f925bf9528508a11a7de0a48926283523513b218a5"
             },
             "mojave": {
-              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.0.mojave.bottle.tar.gz",
-              "sha256": "c653c2767b67475a87b6f52d275dbcdb1de0bf2d56989c6555781a090a1fe81f"
+              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.2.mojave.bottle.1.tar.gz",
+              "sha256": "7cd3ecbe6c03b9425674bac87430e2a988bad2e4335f485d71679348ff7226c5"
             },
             "high_sierra": {
-              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.0.high_sierra.bottle.tar.gz",
-              "sha256": "0357d87553355e3df806a15292b06693c973a1f0457b536f175c5ee5405db6ed"
-            },
-            "x86_64_linux": {
-              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.0.x86_64_linux.bottle.tar.gz",
-              "sha256": "eeed6d53ec4dac936986af5a603cb67d25d19654dc5ee1829d69306289ffef8e"
+              "url": "https://linuxbrew.bintray.com/bottles/docker-compose-1.26.2.high_sierra.bottle.1.tar.gz",
+              "sha256": "f4883d177fb8cbea9bd9c289a04b774c02d201cf394156f09207cdcf3ad9d2da"
             }
           }
         }
@@ -593,9 +589,9 @@
         "GCC": "5.5.0"
       },
       "Ubuntu 18.04.4 LTS (bionic)": {
-        "HOMEBREW_VERSION": "2.4.2",
+        "HOMEBREW_VERSION": "2.4.3",
         "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
-        "Homebrew/linuxbrew-core": "9099cd2605d42ec7e65621d7c487e54a188dad0a",
+        "Homebrew/linuxbrew-core": "13d04d630d0b9625692d72e89cae5a5c392c8d19",
         "GCC": "5.5.0"
       }
     }
