@@ -3,26 +3,26 @@
     "brew": {
       "ag": null,
       "awscli": {
-        "version": "2.0.28_1",
+        "version": "2.0.30",
         "bottle": {
           "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
           "prefix": "/home/linuxbrew/.linuxbrew",
           "files": {
             "catalina": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.28_1.catalina.bottle.tar.gz",
-              "sha256": "9ccda93a89e585db08fa5ea113c158f6fe5c65bbab558e60f38f7a94256db0a1"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.30.catalina.bottle.tar.gz",
+              "sha256": "51f06bcb5af7ae8d38e74d7f74ec363cb2341960636dd36ac8ac011a76664cfe"
             },
             "mojave": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.28_1.mojave.bottle.tar.gz",
-              "sha256": "f113e0cc6520184d4a311c905a8b727d1b180b141198b685156ed673ef144309"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.30.mojave.bottle.tar.gz",
+              "sha256": "7ac7d2fb50136f41251eebdccfec209cd0004fb6952b949bb0ab9566cae2ec4a"
             },
             "high_sierra": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.28_1.high_sierra.bottle.tar.gz",
-              "sha256": "c0e144f0bff81abd16f70afa047d1208de7c515c87487c0e927004fc0b9287d2"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.30.high_sierra.bottle.tar.gz",
+              "sha256": "aea7d8638b34d184c2c2f082f957f398eaa69e723360685e08326f3c2f0c5392"
             },
             "x86_64_linux": {
-              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.28_1.x86_64_linux.bottle.tar.gz",
-              "sha256": "20b313d3a1dd59f6a66566275904f40d7accb9b0b257284fb4670ea0f9daecc4"
+              "url": "https://linuxbrew.bintray.com/bottles/awscli-2.0.30.x86_64_linux.bottle.tar.gz",
+              "sha256": "522299da0185e028fdf4072cda79f3cf784388b35b8e120ce5b251e2be5a9b2c"
             }
           }
         }
@@ -589,9 +589,9 @@
         "GCC": "5.5.0"
       },
       "Ubuntu 18.04.4 LTS (bionic)": {
-        "HOMEBREW_VERSION": "2.4.4",
+        "HOMEBREW_VERSION": "2.4.5",
         "HOMEBREW_PREFIX": "/home/linuxbrew/.linuxbrew",
-        "Homebrew/linuxbrew-core": "56492a067319a8667d2e8b0acbd273b6b1efbabf",
+        "Homebrew/linuxbrew-core": "dd9be57b7de2cadecdaa5fea0fa5fb0e7dff316b",
         "GCC": "5.5.0"
       }
     }

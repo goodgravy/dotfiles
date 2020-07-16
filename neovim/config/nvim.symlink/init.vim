@@ -14,6 +14,8 @@ inoremap jk <ESC>
 " highlight search
 set hlsearch
 nmap <leader>hl :let @/ = ""<CR>
+hi Search ctermbg=LightYellow
+hi Search ctermfg=DarkBlue
 
 " Customise UI
 set background=light
