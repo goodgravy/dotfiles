@@ -17,8 +17,10 @@ brew 'rbenv'
 brew 'ripgrep'
 brew 'tmux'
 
-cask 'java' unless system '/usr/libexec/java_home --failfast'
-cask 'spectacle'
-cask 'nordvpn'
 cask 'boostnote'
+cask 'java' unless system '/usr/libexec/java_home --failfast'
+cask 'nordvpn'
+cask 'slack'
+cask 'spectacle'
 cask 'zettlr'
+
