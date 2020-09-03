@@ -11,14 +11,17 @@ noremap <C-l> <C-w>l
 inoremap jj <ESC>
 inoremap jk <ESC>
 
-" highlight search
+" search tweaks
 set hlsearch
 nmap <leader>hl :let @/ = ""<CR>
 hi Search ctermbg=LightYellow
 hi Search ctermfg=DarkBlue
+set ignorecase
+set smartcase
 
 " Customise UI
 set background=light
+set number
 
 " Set ctags file location
 set tags+=.tags
