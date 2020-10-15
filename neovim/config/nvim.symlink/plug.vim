@@ -17,5 +17,11 @@ Plug 'preservim/nerdtree'
 " Asynchronous linter
 Plug 'dense-analysis/ale'
 
+" Guess an appropriate indentation style
+Plug 'tpope/vim-sleuth'
+
+" Better syntax highlighting
+Plug 'sheerun/vim-polyglot'
+
 " Initialize plugin system
 call plug#end()
