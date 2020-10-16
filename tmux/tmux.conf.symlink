@@ -49,4 +49,3 @@ bind -n C-l run "(tmux display-message -p '#{pane_current_command}' | grep -iq '
 # Enable persistent SSH agent forwarding
 # https://blog.testdouble.com/posts/2016-11-18-reconciling-tmux-and-ssh-agent-forwarding/
 set -g update-environment "DISPLAY SSH_ASKPASS SSH_AGENT_PID SSH_CONNECTION WINDOWID XAUTHORITY"
-setenv -g SSH_AUTH_SOCK $HOME/.ssh/ssh_auth_sock
