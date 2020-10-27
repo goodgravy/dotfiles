@@ -18,9 +18,9 @@ brew 'ripgrep'
 brew 'tmux'
 
 cask 'boostnote'
+cask 'brave-browser'
 cask 'java' unless system '/usr/libexec/java_home --failfast'
 cask 'nordvpn'
 cask 'slack'
 cask 'spectacle'
 cask 'zettlr'
-
