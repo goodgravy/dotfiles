@@ -16,6 +16,7 @@ brew 'pgcli'
 brew 'postman'
 brew 'rbenv'
 brew 'ripgrep'
+brew 'terraform'
 brew 'tmux'
 
 cask 'boostnote'
