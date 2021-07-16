@@ -13,3 +13,5 @@ alias gs "git status -sb"
 alias gap "git add --patch"
 
 alias gcp "git checkout --patch"
+
+alias webc "convox run web 'APPOPTICS_SERVICE_KEY=lalala rails c' -r teespring/rails-production -a teespring"
