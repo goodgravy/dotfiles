@@ -2,3 +2,4 @@ ssh_auth_sock
 known_hosts
 dubwana*
 *.pem
+id_*
