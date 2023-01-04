@@ -21,6 +21,7 @@ brew 'tmux'
 brew 'vespa-cli'
 
 cask 'anki'
+cask 'apptivate'
 cask 'boostnote'
 cask 'brave-browser'
 cask 'nordvpn'
