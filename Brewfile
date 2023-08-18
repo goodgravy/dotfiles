@@ -1,7 +1,6 @@
 cask_args appdir: '/Applications'
 
 brew 'awscli'
-brew 'anki'
 brew 'coreutils'
 brew 'direnv'
 brew 'docker-compose'
