@@ -20,6 +20,7 @@ brew 'thefuck'
 brew 'tmux'
 brew 'vespa-cli'
 
+cask '1password-cli'
 cask 'anki'
 cask 'apptivate'
 cask 'boostnote'
