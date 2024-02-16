@@ -22,8 +22,6 @@ brew 'vespa-cli'
 
 cask '1password-cli'
 cask 'anki'
-cask 'apptivate'
-cask 'boostnote'
 cask 'brave-browser'
 cask 'monero-wallet'
 cask 'nordvpn'
