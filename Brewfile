@@ -20,6 +20,7 @@ brew 'ripgrep'
 brew 'thefuck'
 brew 'tmux'
 brew 'vespa-cli'
+brew 'git-absorb'
 
 cask '1password-cli'
 cask 'anki'
