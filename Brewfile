@@ -20,6 +20,7 @@ brew 'ripgrep'
 brew 'vespa-cli'
 brew 'git-absorb'
 brew 'zellij'
+brew 'pyenv'
 
 cask '1password-cli'
 cask 'nordvpn'
