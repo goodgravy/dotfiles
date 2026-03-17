@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+# full-stop-daily — wrapper for scheduled runs of full-stop.
+# Only sends a macOS notification when something interesting happens
+# (pull brought new code, or full-stop failed). Silent otherwise.
+
+set -euo pipefail
+
+cd "${HOME}/.dotfiles"
+
+# Capture state before
+before=$(git rev-parse HEAD 2>/dev/null || echo "unknown")
+
+# Run full-stop, capture output and exit code
+output=$(./full-stop/script/full-stop 2>&1) || exit_code=$?
+exit_code=${exit_code:-0}
+
+after=$(git rev-parse HEAD 2>/dev/null || echo "unknown")
+
+# Only notify on interesting events
+if [ "$exit_code" -ne 0 ]; then
+  osascript -e 'display notification "full-stop failed — check ~/.full-stop.log" with title "full-stop" sound name "Basso"'
+elif [ "$before" != "$after" ]; then
+  # Summarise what changed
+  count=$(git rev-list --count "${before}..${after}" 2>/dev/null || echo "some")
+  osascript -e "display notification \"Pulled ${count} new commit(s)\" with title \"full-stop\""
+fi
+# Otherwise: silence. Nothing changed, nothing to report.
