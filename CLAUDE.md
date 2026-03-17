@@ -28,6 +28,7 @@ Each top-level directory is a **topic** (e.g., `git/`, `fish/`, `neovim/`).
 full-stop                       # full run: pull, brew, all topics
 full-stop git fish              # only named topics (skips brew/pull)
 full-stop --dry-run             # preview without changes
+full-stop --force ghostty       # overwrite existing files (no prompts)
 full-stop --unlink              # remove all managed symlinks
 full-stop --unlink git          # remove only git symlinks
 full-stop --list-topics         # show topics with metadata
@@ -125,9 +126,10 @@ Always preview before applying:
 full-stop --dry-run <topic>
 ```
 
-Then apply:
+Then apply (use `--force` to overwrite the original file with the symlink without
+interactive prompting):
 ```sh
-full-stop <topic>
+full-stop --force <topic>
 ```
 
 ### Step 6: Add shell integration (if needed)
@@ -146,7 +148,7 @@ cp ~/Library/Application\ Support/com.mitchellh.ghostty/config ghostty/config
 echo '~/Library/Application Support/com.mitchellh.ghostty/config' > ghostty/config.linkto
 # Add to Brewfile: cask 'ghostty'
 full-stop --dry-run ghostty
-full-stop ghostty
+full-stop --force ghostty
 ```
 
 #### Example: Starship prompt
@@ -158,7 +160,7 @@ cp ~/.config/starship.toml starship/config/starship.toml.symlink
 # Add to Brewfile: brew 'starship'
 # Create starship/init.fish with: starship init fish | source
 full-stop --dry-run starship
-full-stop starship
+full-stop --force starship
 ```
 
 #### Example: SSH config (already exists in this repo)
