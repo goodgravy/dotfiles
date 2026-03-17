@@ -1,0 +1,81 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /Users/james/Library/Application Support/com.mitchellh.ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+#
+# Ghostty can reload the configuration while running by using the menu
+# options or the bound key (default: Command + Shift + comma on macOS and
+# Control + Shift + comma on other platforms). Not all config options can be
+# reloaded while running; some only apply to new windows and others may require
+# a full restart to take effect.
+
+# Config syntax crash course
+# ==========================
+# # The config file consists of simple key-value pairs,
+# # separated by equals signs.
+# font-family = Iosevka
+# window-padding-x = 2
+#
+# # Spacing around the equals sign does not matter.
+# # All of these are identical:
+# key=value
+# key= value
+# key =value
+# key = value
+#
+# # Any line beginning with a # is a comment. It's not possible to put
+# # a comment after a config option, since it would be interpreted as a
+# # part of the value. For example, this will have a value of "#123abc":
+# background = #123abc
+#
+# # Empty values are used to reset config keys to default.
+# key =
+#
+# # Some config options have unique syntaxes for their value,
+# # which is explained in the docs for that config option.
+# # Just for example:
+# resize-overlay-duration = 4s 200ms
+
+theme = Catppuccin Mocha
+
+# Visual polish
+macos-titlebar-style = transparent
+window-padding-x = 8
+window-padding-y = 8
+window-padding-balance = true
+
+# https://github.com/ghostty-org/ghostty/discussions/3483
+# Send Alt only for keys Zellij uses; everything else does normal macOS input
+macos-option-as-alt = false
+
+keybind = alt+f=text:\x1bf
+keybind = alt+n=text:\x1bn
+keybind = alt+i=text:\x1bi
+keybind = alt+o=text:\x1bo
+keybind = alt+h=text:\x1bh
+keybind = alt+l=text:\x1bl
+keybind = alt+j=text:\x1bj
+keybind = alt+k=text:\x1bk
+keybind = alt+p=text:\x1bp
+keybind = alt+equal=text:\x1b=
+keybind = alt+plus=text:\x1b+
+keybind = alt+left_bracket=text:\x1b[
+keybind = alt+right_bracket=text:\x1b]
+keybind = alt+shift+n=text:\x1b[78;4u
+keybind = alt+shift+p=text:\x1b[80;4u
+keybind = alt+left=text:\x1b[1;3D
+keybind = alt+right=text:\x1b[1;3C
+keybind = alt+up=text:\x1b[1;3A
+keybind = alt+down=text:\x1b[1;3B
