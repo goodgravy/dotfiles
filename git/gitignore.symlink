@@ -1,3 +1,10 @@
 .DS_Store
 *~
 *.swp
+.env
+.env.local
+.idea/
+.vscode/
+*.pyc
+__pycache__/
+.direnv/

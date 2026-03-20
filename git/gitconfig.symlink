@@ -12,6 +12,7 @@
 [core]
         excludesfile = ~/.gitignore
         editor = nvim
+	pager = delta
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -27,7 +28,7 @@
 	lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative  --all
 	lgba = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches --all
 [commit]
-	template = /Users/james/.git-commit-template.txt
+	template = ~/.git-commit-template.txt
 [init]
 	defaultBranch = main
 [filter "lfs"]
@@ -35,5 +36,17 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[hub]
-	protocol = ssh
+[pull]
+	rebase = true
+[rebase]
+	autosquash = true
+[rerere]
+	enabled = true
+[diff]
+	algorithm = histogram
+	colorMoved = default
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	side-by-side = true
