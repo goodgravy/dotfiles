@@ -36,6 +36,8 @@ brew 'zellij'
 brew 'pyenv'
 brew 'pam-reattach'
 brew 'git-crypt'
+brew 'grip'
+brew 'terraform'
 
 cask '1password-cli'
 cask 'nordvpn'
