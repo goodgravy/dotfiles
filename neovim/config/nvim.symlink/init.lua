@@ -34,7 +34,7 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- UI settings (preserved from init.vim)
-vim.o.background = 'dark'
+vim.o.background = 'light'
 vim.o.termguicolors = true
 
 -- Sync clipboard between OS and Neovim
@@ -437,9 +437,9 @@ require('lazy').setup({
     priority = 1000,
     config = function()
       require('catppuccin').setup {
-        flavour = 'mocha',
+        flavour = 'latte',
       }
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      vim.cmd.colorscheme 'catppuccin-latte'
     end,
   },
 

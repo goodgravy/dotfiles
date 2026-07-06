@@ -49,7 +49,7 @@
 # resize-overlay-duration = 4s 200ms
 
 font-family = Menlo
-theme = Catppuccin Mocha
+theme = Catppuccin Latte
 
 # Visual polish
 macos-titlebar-style = transparent

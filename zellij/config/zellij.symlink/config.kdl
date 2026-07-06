@@ -269,7 +269,7 @@ plugins {
 //         completed_icon "✅"
 //     }
 // }
-theme "catppuccin-mocha"
+theme "catppuccin-latte"
 
 web_client {
     font "monospace"
