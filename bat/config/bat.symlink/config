@@ -1,0 +1,7 @@
+# Follow macOS light/dark appearance. Don't use plain `auto` (terminal
+# background detection): zellij answers OSC 10/11 queries with black
+# (zellij-org/zellij#3590), which makes bat pick the dark theme on a
+# light terminal.
+--theme=auto:system
+--theme-light="Catppuccin Latte"
+--theme-dark="Catppuccin Mocha"
