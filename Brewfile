@@ -40,6 +40,7 @@ brew 'pam-reattach'
 brew 'git-crypt'
 brew 'glow'
 brew 'terraform'
+brew 'just'
 
 cask '1password-cli'
 cask 'nordvpn'

@@ -70,6 +70,7 @@ keybind = alt+l=text:\x1bl
 keybind = alt+j=text:\x1bj
 keybind = alt+k=text:\x1bk
 keybind = alt+p=text:\x1bp
+keybind = alt+c=text:\x1bc
 keybind = alt+equal=text:\x1b=
 keybind = alt+plus=text:\x1b+
 keybind = alt+left_bracket=text:\x1b[
