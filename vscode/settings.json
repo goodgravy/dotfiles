@@ -1,0 +1,291 @@
+// VS Code user settings — managed by ~/.dotfiles/vscode (full-stop .linkto).
+// Comments are full-line only so `grep -v '^\s*//' | jq .` can validate the file.
+{
+  // ───────────────────────────── Appearance ─────────────────────────────
+  // Follow macOS light/dark, matching bat (--theme=auto:system) and Ghostty.
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-latte",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "workbench.tree.indent": 16,
+  "workbench.layoutControl.enabled": false,
+  // Explorer key bindings (keybindings.json) take j/k/h/l etc.; only start
+  // type-to-filter explicitly with `/`.
+  "workbench.list.typeNavigationMode": "trigger",
+
+  // ─────────────────────────────── Editor ───────────────────────────────
+  // Same font as Ghostty.
+  "editor.fontFamily": "Menlo, Monaco, monospace",
+  "editor.fontSize": 13,
+  // Mirrors nvim: number (absolute), cursorline, scrolloff=10, listchars trail.
+  "editor.lineNumbers": "on",
+  "editor.renderLineHighlight": "line",
+  "editor.cursorSurroundingLines": 10,
+  "editor.renderWhitespace": "trailing",
+  "editor.cursorBlinking": "solid",
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  // guess-indent.nvim equivalent.
+  "editor.detectIndentation": true,
+  "editor.wordWrap": "off",
+  // Completion: accept with <C-y> (blink.cmp default preset), never with Enter.
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.suggestSelection": "first",
+  // Inlay hints on demand: hold Ctrl+Option to show (nvim: <leader>th toggle).
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  // Recommended by VSCodeVim; avoids screen-reader mode fighting the extension.
+  "editor.accessibilitySupport": "off",
+
+  // ─────────────────────────── Files & search ───────────────────────────
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.associations": {
+    "*.fish": "fish",
+    "justfile": "just",
+    "Justfile": "just",
+    ".env.*": "dotenv"
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.venv/**": true,
+    "**/venv/**": true,
+    "**/.next/**": true,
+    "**/dist/**": true,
+    "**/__pycache__/**": true,
+    "**/.mypy_cache/**": true,
+    "**/.ruff_cache/**": true,
+    "**/.pytest_cache/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.venv": true,
+    "**/venv": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/__pycache__": true,
+    "**/pnpm-lock.yaml": true,
+    "**/yarn.lock": true,
+    "**/package-lock.json": true,
+    "**/bun.lock*": true,
+    "**/uv.lock": true,
+    "**/poetry.lock": true
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": "pnpm-lock.yaml, yarn.lock, package-lock.json, bun.lock, bun.lockb, .npmrc, .nvmrc, .node-version, pnpm-workspace.yaml, .prettierrc*, prettier.config.*, .prettierignore, .eslintrc*, eslint.config.*, .eslintignore, tsconfig*.json, tailwind.config.*, postcss.config.*, next.config.*, next-env.d.ts, vitest.config.*, jest.config.*, playwright.config.*, .editorconfig",
+    "pyproject.toml": "uv.lock, poetry.lock, .python-version, pyrightconfig.json, ruff.toml, setup.cfg, setup.py, requirements*.txt, pytest.ini, tox.ini",
+    "*.ts": "${capture}.test.ts, ${capture}.spec.ts, ${capture}.d.ts",
+    "*.tsx": "${capture}.test.tsx, ${capture}.spec.tsx, ${capture}.stories.tsx, ${capture}.module.css",
+    ".env": ".env.*",
+    "README.md": "LICENSE*, CHANGELOG*, CONTRIBUTING*, CODE_OF_CONDUCT*"
+  },
+
+  // ────────────────────────────── Terminal ──────────────────────────────
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.fontFamily": "Menlo",
+  "terminal.integrated.scrollback": 10000,
+  "terminal.external.osxExec": "Ghostty.app",
+
+  // ──────────────────────────────── Git ─────────────────────────────────
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+
+  // ──────────────────── AI, telemetry, and other noise ──────────────────
+  // Claude Code runs in the terminal (Ghostty/Zellij), not inside the editor.
+  // This hides the built-in Copilot/Chat UI entirely.
+  "chat.disableAIFeatures": true,
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  "update.showReleaseNotes": false,
+  "workbench.enableExperiments": false,
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // ────────────────────────── Vim (VSCodeVim) ───────────────────────────
+  // Mirrors ~/.config/nvim/init.lua: leader ",", jj/jk to escape, <C-hjkl>
+  // window navigation, telescope-style <leader> pickers, nvim 0.11 gr* LSP maps.
+  "vim.leader": ",",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.useCtrlKeys": true,
+  "vim.timeout": 300,
+  "vim.highlightedyank.enable": true,
+  // mini.surround equivalent (ys/cs/ds).
+  "vim.surround": true,
+  // Off: its `gr` prefix would shadow the grn/gra/grr/... LSP maps below.
+  "vim.replaceWithRegister": false,
+  "vim.visualstar": true,
+  "vim.foldfix": true,
+  "vim.statusBarColorControl": false,
+  "vim.insertModeKeyBindings": [
+    { "before": ["j", "j"], "after": ["<Esc>"] },
+    { "before": ["j", "k"], "after": ["<Esc>"] }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Window navigation
+    { "before": ["<C-h>"], "commands": ["workbench.action.navigateLeft"] },
+    { "before": ["<C-j>"], "commands": ["workbench.action.navigateDown"] },
+    { "before": ["<C-k>"], "commands": ["workbench.action.navigateUp"] },
+    { "before": ["<C-l>"], "commands": ["workbench.action.navigateRight"] },
+
+    // Clear search highlight
+    { "before": ["<Esc>"], "commands": [":nohl"] },
+    { "before": ["<leader>", "h", "l"], "commands": [":nohl"] },
+
+    // Telescope equivalents
+    { "before": ["<leader>", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["<leader>", "s", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["<leader>", "a"], "commands": ["workbench.action.findInFiles"] },
+    { "before": ["<leader>", "s", "g"], "commands": ["workbench.action.findInFiles"] },
+    { "before": ["<leader>", "s", "w"], "commands": ["editor.action.addSelectionToNextFindMatch", "workbench.action.findInFiles"] },
+    { "before": ["<leader>", "b"], "commands": ["workbench.action.showAllEditors"] },
+    { "before": ["<leader>", "<leader>"], "commands": ["workbench.action.showAllEditors"] },
+    { "before": ["<leader>", "s", "."], "commands": ["workbench.action.openRecent"] },
+    { "before": ["<leader>", "s", "c"], "commands": ["workbench.action.showCommands"] },
+    { "before": ["<leader>", "s", "k"], "commands": ["workbench.action.openGlobalKeybindings"] },
+    { "before": ["<leader>", "s", "d"], "commands": ["workbench.actions.view.problems"] },
+    { "before": ["<leader>", "q"], "commands": ["workbench.actions.view.problems"] },
+    { "before": ["<leader>", "/"], "commands": ["actions.find"] },
+
+    // LSP (neovim 0.11 defaults; K/gh hover is built into VSCodeVim)
+    { "before": ["g", "r", "n"], "commands": ["editor.action.rename"] },
+    { "before": ["g", "r", "a"], "commands": ["editor.action.quickFix"] },
+    { "before": ["g", "r", "r"], "commands": ["editor.action.goToReferences"] },
+    { "before": ["g", "r", "i"], "commands": ["editor.action.goToImplementation"] },
+    { "before": ["g", "r", "d"], "commands": ["editor.action.revealDefinition"] },
+    { "before": ["g", "r", "D"], "commands": ["editor.action.revealDeclaration"] },
+    { "before": ["g", "r", "t"], "commands": ["editor.action.goToTypeDefinition"] },
+    { "before": ["g", "O"], "commands": ["workbench.action.gotoSymbol"] },
+    { "before": ["g", "W"], "commands": ["workbench.action.showAllSymbols"] },
+    { "before": ["[", "d"], "commands": ["editor.action.marker.prev"] },
+    { "before": ["]", "d"], "commands": ["editor.action.marker.next"] },
+
+    // Git hunks (gitsigns conventions)
+    { "before": ["]", "c"], "commands": ["workbench.action.editor.nextChange"] },
+    { "before": ["[", "c"], "commands": ["workbench.action.editor.previousChange"] },
+    { "before": ["<leader>", "h", "p"], "commands": ["editor.action.dirtydiff.next"] },
+    { "before": ["<leader>", "h", "s"], "commands": ["git.stageSelectedRanges"] },
+    { "before": ["<leader>", "h", "r"], "commands": ["git.revertSelectedRanges"] },
+    { "before": ["<leader>", "h", "b"], "commands": ["git.blame.toggleEditorDecoration"] },
+
+    // File tree (nvim-tree: <leader>d toggle, <leader>n reveal current file)
+    { "before": ["<leader>", "d"], "commands": ["workbench.action.toggleSidebarVisibility"] },
+    { "before": ["<leader>", "n"], "commands": ["workbench.files.action.showActiveFileInExplorer"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": ["<leader>", "s", "w"], "commands": ["workbench.action.findInFiles"] },
+    { "before": ["g", "r", "a"], "commands": ["editor.action.quickFix"] },
+    { "before": ["<leader>", "h", "s"], "commands": ["git.stageSelectedRanges"] },
+    { "before": ["<leader>", "h", "r"], "commands": ["git.revertSelectedRanges"] }
+  ],
+
+  // ─────────────────────────────── Python ───────────────────────────────
+  // Ruff for lint + format + imports (elicit-mono: line-length 88, py311).
+  // Pylance for types; per-project [tool.pyright] overrides typeCheckingMode.
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.tabSize": 4,
+    "editor.rulers": [88],
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+  // Prefer the project's pinned ruff (uv/.venv); fall back to the bundled one.
+  "ruff.importStrategy": "fromEnvironment",
+  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit"
+  },
+  "notebook.lineNumbers": "on",
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+
+  // ─────────────────────── TypeScript / JavaScript ──────────────────────
+  // Use the workspace's TypeScript when present (prompts once per workspace).
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "typescript.inlayHints.parameterNames.enabled": "literals",
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // Monorepo: resolve the nearest ESLint config per package.
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  // Only format with Prettier where the project has a Prettier config.
+  "prettier.requireConfig": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" }
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" }
+  },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[yaml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": { "other": "off", "comments": "off", "strings": "off" },
+    "files.trimTrailingWhitespace": false
+  },
+
+  // ───────────────────────────── Diagnostics ────────────────────────────
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+
+  // ──────────────────────── Spelling (British English) ──────────────────
+  "cSpell.language": "en-GB",
+  "cSpell.diagnosticLevel": "Hint",
+  "cSpell.userWords": [
+    "Elicit",
+    "Catppuccin",
+    "dotfiles",
+    "Ghostty",
+    "Zellij",
+    "pnpm",
+    "pyright",
+    "ruff"
+  ]
+}

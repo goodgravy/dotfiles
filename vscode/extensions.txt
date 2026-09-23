@@ -1,0 +1,39 @@
+# VS Code extensions installed by vscode/setup.sh (one marketplace ID per line).
+# Add: `code --list-extensions` to see what's installed; paste the ID here.
+
+# Vim
+vscodevim.vim
+
+# Theme (matches bat + Ghostty)
+Catppuccin.catppuccin-vsc
+Catppuccin.catppuccin-vsc-icons
+
+# Python: Pylance types, Ruff lint/format/imports, debugpy, notebooks
+ms-python.python
+ms-python.vscode-pylance
+ms-python.debugpy
+charliermarsh.ruff
+ms-toolsai.jupyter
+
+# TypeScript / web
+dbaeumer.vscode-eslint
+esbenp.prettier-vscode
+yoavbls.pretty-ts-errors
+bradlc.vscode-tailwindcss
+Prisma.prisma
+
+# Editing quality of life
+usernamehw.errorlens
+EditorConfig.EditorConfig
+streetsidesoftware.code-spell-checker
+streetsidesoftware.code-spell-checker-british-english
+
+# Config formats and shells
+redhat.vscode-yaml
+tamasfe.even-better-toml
+mikestead.dotenv
+bmalehorn.vscode-fish
+nefrob.vscode-just-syntax
+
+# Infra
+ms-azuretools.vscode-containers
